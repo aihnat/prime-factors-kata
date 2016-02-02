@@ -30,6 +30,11 @@ public class PrimeFactorsTest {
         assertThat(generate(4)).isEqualTo(list(2, 2));
     }
 
+    @Test
+    public void testFive() {
+        assertThat(generate(6)).isEqualTo(list(2, 3));
+    }
+
     private List<Integer> list(int ... ints) {
         ArrayList<Integer> integers = new ArrayList<>();
         for (int i : ints) {
