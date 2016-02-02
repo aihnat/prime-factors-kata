@@ -6,17 +6,23 @@ import java.util.ArrayList;
 import java.util.List;
 
 import static org.assertj.core.api.Assertions.assertThat;
+import static primeFactors.PrimeFactors.generate;
 
 public class PrimeFactorsTest {
 
     @Test
     public void testOne() {
-        assertThat(PrimeFactors.generate(1)).isEqualTo(list());
+        assertThat(generate(1)).isEqualTo(list());
     }
 
     @Test
     public void testTwo() {
-        assertThat(PrimeFactors.generate(2)).isEqualTo(list(2));
+        assertThat(generate(2)).isEqualTo(list(2));
+    }
+
+    @Test
+    public void testThree() {
+        assertThat(generate(3)).isEqualTo(list(3));
     }
 
     private List<Integer> list(int ... ints) {
