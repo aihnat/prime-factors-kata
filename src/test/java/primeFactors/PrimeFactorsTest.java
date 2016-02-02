@@ -25,6 +25,11 @@ public class PrimeFactorsTest {
         assertThat(generate(3)).isEqualTo(list(3));
     }
 
+    @Test
+    public void testFour() {
+        assertThat(generate(4)).isEqualTo(list(2, 2));
+    }
+
     private List<Integer> list(int ... ints) {
         ArrayList<Integer> integers = new ArrayList<>();
         for (int i : ints) {
